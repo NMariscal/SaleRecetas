@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_baby_orange"
+    tools:context=".Eliminar">
+
+    <ImageButton
+        android:id="@+id/imageButtonHomeEliminar"
+        android:layout_width="57dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="177dp"
+        android:layout_marginEnd="177dp"
+        android:layout_marginBottom="379dp"
+        android:background="@color/light_baby_orange"
+        android:scaleType="centerInside"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/home" />
+
+    <EditText
+        android:id="@+id/editTextEliminar"
+        android:layout_width="289dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="71dp"
+        android:layout_marginTop="115dp"
+        android:layout_marginEnd="51dp"
+        android:layout_marginBottom="23dp"
+        android:ems="10"
+        android:hint="Introduzca el ID de la receta a eliminar"
+        android:textColorHint="@color/gris_lestras_hint"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/buttonEliminar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/buttonEliminar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="153dp"
+        android:layout_marginEnd="165dp"
+        android:layout_marginBottom="78dp"
+        android:text="@string/eliminar"
+        android:textColor="@color/light_baby_orange"
+        app:layout_constraintBottom_toTopOf="@+id/imageButtonHomeEliminar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/light_baby_orange"
+    android:layout_height="match_parent"
+    tools:context=".NuevaReceta">
+
+    <TextView
+        android:id="@+id/textViewImagenURL"
+        android:layout_width="115dp"
+        android:layout_height="23dp"
+        android:layout_marginStart="22dp"
+        android:layout_marginEnd="274dp"
+        android:text="@string/url_imagen"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/editTextURLVer"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextTituloRecetaVer"
+        android:layout_width="368dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="15dp"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="@string/nombre_de_la_receta"
+        android:inputType="textPersonName"
+        android:textColorHint="@color/gris_lestras_hint"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/editTextDuracionVer"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextMultiLineIngredientesVer"
+        android:layout_width="363dp"
+        android:layout_height="148dp"
+        android:layout_marginStart="22dp"
+        android:layout_marginEnd="26dp"
+        android:layout_marginBottom="9dp"
+        android:ems="10"
+        android:gravity="start|top"
+        android:inputType="textMultiLine"
+        android:textColorHint="@color/gris_lestras_hint"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/textView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextDuracionVer"
+        android:layout_width="180dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="7dp"
+        android:layout_marginEnd="88dp"
+        android:layout_marginBottom="43dp"
+        android:ems="10"
+        android:inputType="text"
+        android:textColor="@color/black"
+        android:textColorHint="@color/gris_lestras_hint"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/editTextMultiLineIngredientesVer"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView3" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="115dp"
+        android:layout_height="23dp"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="7dp"
+        android:layout_marginBottom="10dp"
+        android:text="@string/duraci_n"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/textView"
+        app:layout_constraintEnd_toStartOf="@+id/editTextDuracionVer"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTituloRecetaVer" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="22dp"
+        android:layout_marginEnd="219dp"
+        android:layout_marginBottom="9dp"
+        android:text="@string/modo_de_preparaci_n"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/editTextMultiLineModoPreparacionVer"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextMultiLineModoPreparacionVer"
+        android:layout_width="375dp"
+        android:layout_height="232dp"
+        android:layout_marginStart="22dp"
+        android:layout_marginEnd="14dp"
+        android:layout_marginBottom="12dp"
+        android:ems="10"
+        android:gravity="start|top"
+        android:inputType="textMultiLine"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/textViewImagenURL"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="22dp"
+        android:layout_marginEnd="289dp"
+        android:layout_marginBottom="9dp"
+        android:text="@string/ingredientes"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/editTextMultiLineIngredientesVer"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/buttonVolver"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="31dp"
+        android:layout_marginEnd="153dp"
+        android:layout_marginBottom="16dp"
+        android:textColor="@color/light_baby_orange"
+        android:text="@string/volver"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/buttonGuardarVer"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/buttonGuardarVer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="31dp"
+        android:layout_marginBottom="16dp"
+        android:text="@string/guardar"
+        android:textColor="@color/light_baby_orange"
+        android:textColorLink="@color/cambridge_blue"
+        app:iconTint="@color/green"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextURLVer"
+        android:layout_width="371dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="22dp"
+        android:layout_marginEnd="18dp"
+        android:layout_marginBottom="22dp"
+        android:ems="10"
+        android:textColor="@color/black"
+        android:inputType="textMultiLine"
+        android:textColorHint="@color/gris_lestras_hint"
+        app:layout_constraintBottom_toTopOf="@+id/buttonVolver"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

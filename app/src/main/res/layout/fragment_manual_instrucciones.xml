@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_baby_orange"
+    tools:context=".ManualInstruccionesFragment">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:text="En primer lugar, pulse el botón de 'Comenzar'.
+A continuación, visualizará todas las recetas guardadas en la base de datos. Si desea añadir una receta pulse el botón 'Añadir receta' y rellene todos los campos.
+Si desea visualizar una receta haga click en la receta que desee.
+Si desea eliminar una receta pulse el botón 'Más opciones' y seleccione 'Eliminar'.
+Para eliminar una receta debe insertar el ID de la receta que desea eliminar." />
+
+    <Button
+        android:id="@+id/buttonCerrarManual"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center"
+        android:onClick="onClick"
+        android:textColor="@color/light_baby_orange"
+        android:text="@string/cerrar" />
+
+</FrameLayout>

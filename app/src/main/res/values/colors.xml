@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="salmon">#ee9e87</color>
+    <color name="light_salmon">#FCD5CE</color>
+    <color name="green">#2a9d8f</color>
+    <color name="cambridge_blue">#2a9d8f</color>
+    <color name="light_green">#ECE4DB</color>
+    <color name="rose">#BB7C6A</color>
+    <color name="black">#000000</color>
+    <color name="light_baby_orange">#FFD7BA</color>
+    <color name="baby_orange">#FEC89A</color>
+    <color name="beige_background">#F3E7E3</color>
+    <color name="chocolate">#845736</color>
+    <color name="light_grey">#E8E8E4</color>
+    <color name="beige">#ECE4DB</color>
+    <color name="gris_lestras_hint">#292929</color>
+
+</resources>
